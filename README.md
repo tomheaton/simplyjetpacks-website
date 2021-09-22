@@ -1,1 +1,1 @@
-# Simply Jetpacks 2 - Website
+# Simply Jetpacks - Website
