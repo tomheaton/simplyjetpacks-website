@@ -1,9 +1,19 @@
 import {NextPage} from "next";
+import {useRouter} from "next/router";
 
 const Fabric: NextPage = () => {
+
+    const router = useRouter();
+
+    const handleReturn = () => {
+        router.push("/");
+    }
+
     return (
-        <div>
-            Page: Simply Jetpacks 2 (Fabric)
+        <div className={"container"}>
+            <h1>Simply Jetpacks 2 (Fabric)</h1>
+            <p>Oops, page is under construction... 🏗️</p>
+            <button onClick={handleReturn}>Return Home</button>
         </div>
     );
 }
