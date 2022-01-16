@@ -5,15 +5,11 @@ const Fabric: NextPage = () => {
 
     const router = useRouter();
 
-    const handleReturn = () => {
-        router.push("/");
-    }
-
     return (
         <div className={"container"}>
             <h1>Simply Jetpacks 2 (Terraria)</h1>
             <p>Oops, page is under construction... 🏗️</p>
-            <button onClick={handleReturn}>Return Home</button>
+            <button onClick={() => {router.push("/")}}>Return Home</button>
         </div>
     );
 }

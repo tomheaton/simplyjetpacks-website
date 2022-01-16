@@ -44,7 +44,7 @@ const Index: NextPage = () => {
                             <i className="bi bi-discord" aria-label="Discord"/>
                         </a>
                     </div>
-                    <p>&#169; Simply Jetpacks {new Date().getFullYear()}</p>
+                    <p>&copy; Simply Jetpacks {new Date().getFullYear()}</p>
                 </div>
             </footer>
         </div>
