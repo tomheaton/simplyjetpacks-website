@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css';
-import type {NextPage} from 'next';
+import {NextPage} from 'next';
 import Head from 'next/head';
 import {useRouter} from "next/router";
 
@@ -22,7 +22,7 @@ const Index: NextPage = () => {
                 {/*<h1 className={styles.title}>Simply Jetpacks</h1>*/}
 
                 <div className={styles.grid}>
-                    <div className={styles.card} onClick={() => {router.push("/simplyjetpacks2")}}>
+                    <div className={styles.card} onClick={() => {router.push("/forge")}}>
                         <h2>Simply Jetpacks 2</h2>
                         <p>Find out more!</p>
                     </div>

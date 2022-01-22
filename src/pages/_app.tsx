@@ -1,8 +1,9 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/globals.css';
-import type {AppProps} from 'next/app';
+import {AppProps} from 'next/app';
 
 const MyApp = ({Component, pageProps}: AppProps) => {
+
     return (
         <Component {...pageProps} />
     );

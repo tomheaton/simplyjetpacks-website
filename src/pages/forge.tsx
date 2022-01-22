@@ -2,18 +2,18 @@ import {NextPage} from "next";
 import {useRouter} from "next/router";
 import Head from "next/head";
 
-const Fabric: NextPage = () => {
+const SimplyJetpacks: NextPage = () => {
 
     const router = useRouter();
 
     return (
         <div className={"container"}>
             <Head>
-                <title>Bedrock | Simply Jetpacks</title>
+                <title>Forge | Simply Jetpacks</title>
                 <meta name="description" content="Simply Jetpacks - Website"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <h1>Simply Jetpacks 2 (Bedrock)</h1>
+            <h1>Simply Jetpacks 2 (Forge)</h1>
             <p>Oops, page is under construction... 🏗️</p>
             <button onClick={() => {router.push("/")}}>
                 Return Home
@@ -22,4 +22,4 @@ const Fabric: NextPage = () => {
     );
 }
 
-export default Fabric;
+export default SimplyJetpacks;
