@@ -14,8 +14,8 @@ const Fabric: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <h1>Simply Jetpacks 2 (Bedrock)</h1>
-            <p>Oops, page is under construction... 🏗️</p>
-            <button onClick={() => {router.push("/")}}>
+            <p>Oops, this page is under construction... 🏗️</p>
+            <button className={"btn"} onClick={() => {router.push("/")}}>
                 Return Home
             </button>
         </div>
