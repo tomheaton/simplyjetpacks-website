@@ -136,3 +136,17 @@
         width: 80%;
     }
 }
+
+.badgeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.here {
+    color: #FDC51E;
+}
+
+.here:hover {
+    font-weight: bold;
+}
