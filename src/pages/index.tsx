@@ -1,6 +1,7 @@
-import {NextPage} from 'next';
-import Head from 'next/head';
+import {NextPage} from "next";
+import Head from "next/head";
 import Link from "next/link";
+import Footer from "@components/Footer";
 
 const Index: NextPage = () => {
 
@@ -57,19 +58,7 @@ const Index: NextPage = () => {
                 </div>
 
                 {/*TODO: fix styling so this can be removed from main tag*/}
-                <footer className={"w-full h-[100px] flex justify-center items-center border-t border-[#eaeaea]"}>
-                    <div className={"flex flex-col"}>
-                        <div className={"text-center"}>
-                            <a target={"_blank"} href={"https://www.github.com/simplyjetpacks"} rel={"noopener noreferrer"}>
-                                <i className={"bi bi-github mr-2"} aria-label={"Github"}/>
-                            </a>
-                            <a target={"_blank"} href={"https://discord.gg/v5qJysC"} rel={"noopener noreferrer"}>
-                                <i className={"bi bi-discord"} aria-label={"Discord"}/>
-                            </a>
-                        </div>
-                        <p>&copy; Simply Jetpacks {new Date().getFullYear()}</p>
-                    </div>
-                </footer>
+                <Footer />
             </main>
         </div>
     )
