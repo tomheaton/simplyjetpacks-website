@@ -1,1 +1,3 @@
-# Simply Jetpacks - Website
+# simplyjetpacks-website
+
+Simply Jetpacks website
