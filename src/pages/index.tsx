@@ -1,4 +1,3 @@
-import styles from '../styles/Main.module.css';
 import {NextPage} from 'next';
 import Head from 'next/head';
 import {useRouter} from "next/router";
@@ -8,21 +7,21 @@ const Index: NextPage = () => {
     const router = useRouter();
 
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Simply Jetpacks</title>
                 <meta name="description" content="Simply Jetpacks - Website"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main className={styles.main}>
-                <div className={styles.imageWrapper}>
-                    <img src={"/logo.png"} alt={"Simply Jetpacks Logo"} className={styles.logo}/>
+            <main className={"styles.main"}>
+                <div className={"styles.imageWrapper"}>
+                    <img src={"/logo.png"} alt={"Simply Jetpacks Logo"} className={"styles.logo"} />
                 </div>
                 {/*<h1 className={styles.title}>Simply Jetpacks</h1>*/}
 
-                <div className={styles.grid}>
-                    <div className={styles.card} onClick={() => {router.push("/forge")}}>
+                <div className={"styles.grid"}>
+                    <div className={"styles.card"} onClick={() => {router.push("/forge")}}>
                         <h2>Forge</h2>
                         <p>Find out more!</p>
                     </div>
@@ -44,9 +43,9 @@ const Index: NextPage = () => {
                 </div>
             </main>
 
-            <footer className={styles.footer}>
-                <div className={styles.footerWrapper}>
-                    <div className={styles.socials}>
+            <footer className={"styles.footer"}>
+                <div className={"styles.footerWrapper"}>
+                    <div className={"styles.socials"}>
                         <a target={"_blank"} href={"https://www.github.com/simplyjetpacks"} rel={"noopener noreferrer"}>
                             <i className={"bi bi-github"} aria-label={"Github"}/>
                         </a>
