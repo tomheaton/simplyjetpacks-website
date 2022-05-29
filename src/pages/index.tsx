@@ -1,23 +1,18 @@
 import {NextPage} from "next";
 import Head from "next/head";
 import Link from "next/link";
-import Footer from "@components/Footer";
 
 const Index: NextPage = () => {
 
     return (
-        <div className={"h-screen"}>
+        <div className={"w-full"}>
             <Head>
                 <title>Simply Jetpacks</title>
                 <meta name="description" content="Simply Jetpacks - Website"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main className={"flex flex-1 flex-col items-center justify-between w-full h-full"}>
-                <div className={"mt-[50px] w-full lg:w-1/2"}>
-                    <img src={"/logo.png"} alt={"Simply Jetpacks Logo"} className={"w-full"} />
-                </div>
-
+            <main className={"flex flex-1 flex-col items-center justify-center w-full"}>
                 {/*<h1 className={"font-bold text-6xl text-center"}>
                     Simply Jetpacks
                 </h1>*/}
@@ -56,12 +51,9 @@ const Index: NextPage = () => {
                         </div>
                     </Link>
                 </div>
-
-                {/*TODO: fix styling so this can be removed from main tag*/}
-                <Footer />
             </main>
         </div>
-    )
+    );
 }
 
 export default Index;

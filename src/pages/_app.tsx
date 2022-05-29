@@ -1,12 +1,14 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@styles/globals.css';
 import {AppProps} from 'next/app';
+import Layout from "@components/Layout";
 
 const App = ({Component, pageProps}: AppProps) => {
 
-    // TODO: app layout
     return (
-        <Component {...pageProps} />
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
     );
 }
 

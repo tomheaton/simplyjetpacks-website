@@ -5,14 +5,14 @@ import Link from "next/link";
 const Bedrock: NextPage = () => {
 
     return (
-        <div className={"h-screen"}>
+        <div className={"w-full"}>
             <Head>
                 <title>Bedrock | Simply Jetpacks</title>
                 <meta name="description" content="Simply Jetpacks - Website"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main className={"flex flex-1 flex-col items-center justify-center w-full h-full"}>
+            <main className={"flex flex-1 flex-col items-center justify-center w-full"}>
                 <h1 className={"font-bold text-4xl"}>
                     Simply Jetpacks 2 (Bedrock)
                 </h1>
