@@ -4,6 +4,7 @@ import {AppProps} from 'next/app';
 
 const App = ({Component, pageProps}: AppProps) => {
 
+    // TODO: app layout
     return (
         <Component {...pageProps} />
     );
