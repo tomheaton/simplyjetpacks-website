@@ -1,22 +1,29 @@
 import React from "react";
 
-const Footer: React.FC = () => {
+import { FaDiscord, FaGithub } from "react-icons/fa";
 
-    return (
-        <footer className={"w-full h-[100px] flex justify-center items-center border-t border-[#eaeaea]"}>
-            <div className={"flex flex-col"}>
-                <div className={"text-center text-2xl"}>
-                    <a target={"_blank"} href={"https://www.github.com/simplyjetpacks"} rel={"noopener noreferrer"}>
-                        <i className={"bi bi-github mr-4"} aria-label={"Github"}/>
-                    </a>
-                    <a target={"_blank"} href={"https://discord.gg/v5qJysC"} rel={"noopener noreferrer"}>
-                        <i className={"bi bi-discord"} aria-label={"Discord"}/>
-                    </a>
-                </div>
-                <p>&copy; Simply Jetpacks {new Date().getFullYear()}</p>
-            </div>
-        </footer>
-    );
-}
+const Footer: React.FC = () => {
+  return (
+    <footer
+      className={"flex h-[100px] w-full items-center justify-center border-t border-[#eaeaea]"}
+    >
+      <div className={"flex flex-col"}>
+        <div className={"flex items-center justify-center space-x-2 text-2xl"}>
+          <a
+            target={"_blank"}
+            href={"https://www.github.com/simplyjetpacks"}
+            rel={"noopener noreferrer"}
+          >
+            <FaGithub />
+          </a>
+          <a target={"_blank"} href={"https://discord.gg/v5qJysC"} rel={"noopener noreferrer"}>
+            <FaDiscord />
+          </a>
+        </div>
+        <p>&copy; Simply Jetpacks {new Date().getFullYear()}</p>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
